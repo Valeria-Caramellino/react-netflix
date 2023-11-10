@@ -3,28 +3,26 @@ const SectionFilm = (props) =>{
     const img_path = 'https://image.tmdb.org/t/p/w780';
     const placeholderImageUrl = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg';
 
-    if (!props.oggetto || props.oggetto.length === 0) {
-        // Se props.oggetto è undefined o null, o se non ci sono dati significativi, mostra il messaggio "Nessun dato disponibile"
-        return (
-          <div className="card col-3 m-3">
-            <p className="text-light">Nessun dato disponibile</p>
-          </div>
+    //operatore ternario
+    const imageUrl = props.oggetto.poster_path
+    ? `${img_path}${props.oggetto.poster_path}`
+    : placeholderImageUrl;
 
-        );
-    }
     return(
        
    <div className="card col-3 m-2">
          
-      {/* {props.oggetto.name && <p>{props.oggetto.name}</p>}
-      {props.oggetto.title && <p>{props.oggetto.title}</p>} */}
+        {(props.oggetto.name || props.oggetto.title) && (
+
+            <div className="row h-100 align-items-center text-center">
+                <p>
+                    Titolo: {props.oggetto.name || props.oggetto.title}
+                </p>
+            </div>
+        )}
       
-      {props.oggetto.poster_path ? (
-        <img src={`${img_path}${props.oggetto.poster_path}`} alt="" />
-      ) : (
-        <img src={placeholderImageUrl} alt="" />
-      )}
-    
+      <img src={imageUrl} alt="img" />    
+        
     </div>
             
     )

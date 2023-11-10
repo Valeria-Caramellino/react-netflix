@@ -1,0 +1,28 @@
+@import '../style/Variabili.scss';
+.row.search{
+    margin:1.25rem 0; 
+    i{
+        color: $white;
+        margin: 0 2rem;
+        padding: 0.5rem;
+        &:hover{
+            cursor: pointer;
+            padding: 0.5rem;
+            // background-color: rgba(222, 29, 29, 0.7);
+            border-radius: 5px;
+            box-shadow: $shadow_red_search;
+        }
+    }
+    input{
+        height: 2rem;
+        border: 2px solid $white;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgba(22, 18, 18, 0.27);
+        color: $white;
+        &:focus-visible{
+            box-shadow: $shadow_red_search;
+            border: none !important;
+        }
+    }
+}

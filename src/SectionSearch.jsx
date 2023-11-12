@@ -1,5 +1,4 @@
 import React from 'react';
-import StyleSearch from './style/Search.scss';
 
 const SectionSearch = (props) =>{
     return (

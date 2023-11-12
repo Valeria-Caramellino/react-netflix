@@ -1,4 +1,4 @@
-import StyleFooter from './style/Footer.scss';
+import React from "react"
 
 const Footer = () =>{
     return(

@@ -1,4 +1,3 @@
-import StyleHeader from './style/Header.scss';
 import arrayHeader from './data/DatiHeader';
 
 const TextForHeader = arrayHeader.map((el , index) =>(

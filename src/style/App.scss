@@ -1,8 +1,65 @@
 @import "bootstrap/scss/bootstrap";
 @import '../style/Variabili.scss';
+
+//section body
 body{
     background-color: $black;
+    font-family: sans-serif;
 }
+
+//section nav
+nav.row{
+  height: $h_header;
+  color: $white;
+  box-shadow: $shadow_white;
+  p{
+      margin: 0 !important;
+      &:hover{
+          box-shadow: $shadow_red;
+          background-color: $bg_red ;
+          border-radius: 20px;
+          cursor: pointer;
+      }
+  }
+  img{
+      height: $h_logo;
+      &:hover{
+          transform: scale(1.1);
+          cursor: pointer;
+      }
+  }
+}
+
+//section search
+.row.search{
+  margin:1.25rem 0; 
+  i{
+      color: $white;
+      margin: 0 2rem;
+      padding: 0.5rem;
+      &:hover{
+          cursor: pointer;
+          padding: 0.5rem;
+          // background-color: rgba(222, 29, 29, 0.7);
+          border-radius: 5px;
+          box-shadow: $shadow_red_search;
+      }
+  }
+  input{
+      height: 2rem;
+      border: 2px solid $white;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgba(22, 18, 18, 0.27);
+      color: $white;
+      &:focus-visible{
+          box-shadow: $shadow_red_search;
+          border: none !important;
+      }
+  }
+}
+
+//section main
 main{
     .row.my_bg{
         background-color: $bg_red;
@@ -41,6 +98,21 @@ main{
     h3{
         font-size: 1.25rem;
     }
+}
+
+
+//section footer
+footer{
+  height: 3.5rem;
+  i{
+      background-color: $bg_red;
+      border-radius: 10px;
+      padding: 0.75rem;
+  }
+  p{
+      margin: 0 !important;
+      padding: 0 !important;
+  }
 }
 
 

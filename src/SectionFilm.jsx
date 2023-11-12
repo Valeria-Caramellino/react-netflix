@@ -11,7 +11,7 @@ const SectionFilm = (props) =>{
     ? `${img_path}${props.oggetto.poster_path}`
     : placeholderImageUrl;
 
-    //const per voto
+    //const per media voto
     const star = 5;
 
     return(
@@ -31,14 +31,14 @@ const SectionFilm = (props) =>{
                     
                     <React.Fragment key={el}>
                         
-                        {Math.ceil(props.oggetto.vote_average / 2) >= el ? (
+                        {Math.ceil(props.oggetto.vote_average / 2) >= el + 1  ? (
                             <span>
-                                <i class="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
                             </span> 
                                 
                         ) : (
                             <span>
-                               <i class="fa-regular fa-star"></i>
+                               <i className="fa-regular fa-star"></i>
                             </span>   
                         )}
 
@@ -48,6 +48,7 @@ const SectionFilm = (props) =>{
                 </p>
                 
             </div>
+            
         )}
       
       <img src={imageUrl} alt="img" />    

@@ -1,6 +1,16 @@
 const arrayHeader = [
-    "Home",
-    "SerieTv",
-    "Film"
+    {
+        label:'Home',
+        path:'/'
+    },
+    {
+        label:'SerieTv',
+        path:'/serie'
+    },
+    {
+        label:'Film',
+        path:'/film'
+    },
+    
 ];
 export default arrayHeader

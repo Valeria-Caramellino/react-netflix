@@ -8,8 +8,8 @@ const SectionList = ({ title, dataArray }) => {
         <h3 className="col-4 p-2 m-0 text-center text-light">{title}</h3>
       </div>
 
-      <div className="row">
-        <div className="mio d-flex justify-content-around">
+      <div className="row ">
+        <div className="mio my_height d-flex justify-content-around">
           
           {dataArray.map((oggetto) => (
             <SectionFilm key={oggetto.id} oggetto={oggetto} />

@@ -12,8 +12,10 @@ nav.row{
   height: $h_header;
   color: $white;
   box-shadow: $shadow_white;
-  p{
+  a{
       margin: 0 !important;
+      color: $white;
+      text-decoration: none;
       &:hover{
           box-shadow: $shadow_red;
           background-color: $bg_red ;
@@ -61,14 +63,23 @@ nav.row{
 
 //section main
 main{
+   
+
     .row.my_bg{
         background-color: $bg_red;
     }
-    .mio{
-        height: 300px;
+    // .mio.my_height{
+        
+    //     .card{
+    //         height: 100%;
+    //     }
+    // }
+    .mio{ 
+        height: calc(100vh - 280px);
+        // height: 300px;
         overflow-x: auto;
         .card{
-            max-height: 300px;
+            height: 90%;
             background-color: transparent !important;
             
             div > p{

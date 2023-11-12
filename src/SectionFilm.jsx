@@ -25,6 +25,9 @@ const SectionFilm = (props) =>{
                     Titolo: {props.oggetto.name || props.oggetto.title}
                 </p>
                 <p>
+                    Lingua : {props.oggetto.original_language}
+                </p>
+                <p>
                     Voto:
 
                 {[...Array(star).keys()].map((el) => (

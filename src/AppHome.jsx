@@ -17,7 +17,7 @@ const AppHome = () =>{
         
         const ApiFilm = `https://api.themoviedb.org/3/search/movie?api_key=1847c7cbe402614342fdc15b9be4bd97&query=${testo}`;
         
-        const ApiSerie = `https://api.themoviedb.org/3/search/tv?api_key=1847c7cbe402614342fdc15b9be4bd97&query=${testo}`;;
+        const ApiSerie = `https://api.themoviedb.org/3/search/tv?api_key=1847c7cbe402614342fdc15b9be4bd97&query=${testo}`;
         
         const indirizzoFilm = testo ? ApiFilm : initialApiFilm;
         

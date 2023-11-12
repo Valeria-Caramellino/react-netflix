@@ -1,3 +1,5 @@
+import React from "react";
+
 const SectionFilm = (props) =>{
 
     const img_path = 'https://image.tmdb.org/t/p/w780';

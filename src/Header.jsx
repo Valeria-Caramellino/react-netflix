@@ -1,3 +1,4 @@
+import React from 'react';
 import arrayHeader from './data/DatiHeader';
 
 const TextForHeader = arrayHeader.map((el , index) =>(

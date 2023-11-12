@@ -2,13 +2,17 @@ import React from "react";
 
 const SectionFilm = (props) =>{
 
+    //const img
     const img_path = 'https://image.tmdb.org/t/p/w780';
     const placeholderImageUrl = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg';
 
-    //operatore ternario
+    //operatore ternario per img
     const imageUrl = props.oggetto.poster_path
     ? `${img_path}${props.oggetto.poster_path}`
     : placeholderImageUrl;
+
+    //const per voto
+    const star = 5;
 
     return(
        
@@ -20,6 +24,29 @@ const SectionFilm = (props) =>{
                 <p>
                     Titolo: {props.oggetto.name || props.oggetto.title}
                 </p>
+                <p>
+                    Voto:
+
+                {[...Array(star).keys()].map((el) => (
+                    
+                    <React.Fragment key={el}>
+                        
+                        {Math.ceil(props.oggetto.vote_average / 2) >= el ? (
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                            </span> 
+                                
+                        ) : (
+                            <span>
+                               <i class="fa-regular fa-star"></i>
+                            </span>   
+                        )}
+
+                    </React.Fragment>
+
+                ))}
+                </p>
+                
             </div>
         )}
       

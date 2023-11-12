@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SectionSearch from './SectionSearch';
 import SectionList from './SectionList';
+
 const AppMain = () =>{
     
     const [testo, setTesto] = useState('');
@@ -15,9 +16,11 @@ const AppMain = () =>{
     const change = () => {
         
         const ApiFilm = `https://api.themoviedb.org/3/search/movie?api_key=1847c7cbe402614342fdc15b9be4bd97&query=${testo}`;
+        
         const ApiSerie = `https://api.themoviedb.org/3/search/tv?api_key=1847c7cbe402614342fdc15b9be4bd97&query=${testo}`;;
         
         const indirizzoFilm = testo ? ApiFilm : initialApiFilm;
+        
         const indirizzoSerie = testo ? ApiSerie : initialApiSerie;
     
         getApi(indirizzoFilm, indirizzoSerie);
@@ -39,7 +42,9 @@ const AppMain = () =>{
         getApi(initialApiFilm, initialApiSerie);
         
     }, []);
+
     return(
+        
         <main className='container-fluid'> 
        
             <SectionSearch testo={testo} setTesto={setTesto} UpChange={change}/>

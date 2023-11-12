@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SectionSearch from "./SectionSearch";
-import SectionList from "./SectionList";
+import SectionSearch from "../component/SectionSearch";
+import SectionList from "../component/SectionList";
 
 const Serie = () => {
 

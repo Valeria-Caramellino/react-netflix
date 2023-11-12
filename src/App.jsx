@@ -6,9 +6,9 @@ import * as bootstrap from 'bootstrap'
 
 import Header from './Header'
 import Footer from "./Footer";
-import AppHome from './AppHome';
-import AppFilm from './AppFilm';
-import AppSerie from './AppSerie';
+import AppHome from './pages/AppHome';
+import AppFilm from './pages/AppFilm';
+import AppSerie from './pages/AppSerie';
 
 
 

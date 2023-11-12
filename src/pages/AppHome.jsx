@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SectionSearch from './SectionSearch';
-import SectionList from './SectionList';
+import SectionSearch from '../component/SectionSearch';
+import SectionList from '../component/SectionList';
 
 const AppHome = () =>{
     
@@ -51,7 +51,7 @@ const AppHome = () =>{
             
             <SectionList title="LISTA FILM" dataArray={ArrayFilm} />
 
-            <SectionList title="LISTA TELEFILM" dataArray={ArraySerie} />
+            <SectionList title="LISTA SERIE TV" dataArray={ArraySerie} />
           
             
         </main>

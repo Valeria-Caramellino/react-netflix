@@ -7,7 +7,7 @@ import * as bootstrap from 'bootstrap'
 
 import Header from './Header'
 import Footer from "./Footer";
-import AppMain from './AppMain';
+import AppHome from './AppHome';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <div className='container-fluid'>
         <Header/>
         
-        <AppMain/>
+        <AppHome/>
          
         <Footer/>
       </div>

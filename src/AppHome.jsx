@@ -3,7 +3,7 @@ import axios from 'axios';
 import SectionSearch from './SectionSearch';
 import SectionList from './SectionList';
 
-const AppMain = () =>{
+const AppHome = () =>{
     
     const [testo, setTesto] = useState('');
     const [ArrayFilm, setArrayFilm] = useState([]);
@@ -59,4 +59,4 @@ const AppMain = () =>{
         
     )
 }
-export default AppMain
+export default AppHome

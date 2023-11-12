@@ -1,9 +1,6 @@
 const arrayHeader = [
     "Home",
     "SerieTv",
-    "Film",
-    "Originali",
-    "Recenti",
-    "Mia lista"
+    "Film"
 ];
 export default arrayHeader
